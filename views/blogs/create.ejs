@@ -1,0 +1,20 @@
+<html>
+<%- include('../partials/head.ejs') %>
+
+<body>
+    <%- include('../partials/nav.ejs') %>
+
+    <form action="/blogs" method="POST">
+        <label> Title</label>
+        <input type='text' name='title' required>
+        <br>
+        <br>
+        <label> Story </label>
+        <textarea name='intro'> </textarea>
+        <button>submit</button>
+    </form>
+</body>
+
+<%- include('../partials/footer.ejs') %>
+
+</html>
